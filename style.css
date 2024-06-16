@@ -1,0 +1,84 @@
+html {
+  height: 300vh;
+  width: 100vw;
+  background-attachment: fixed;
+  margin: 0;
+  background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172) no-repeat;
+  background-size: 100vw 300vh;
+  animation: gradient-animation 1s ease infinite;
+  position: relative;
+}
+
+main {
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+h1 {
+  text-shadow: 2px 2px 5px red;
+  font-family: Tahoma, sans-serif;
+}
+
+#switch {
+  width: 60px;
+  height: 30px;
+  background-color: gray;
+  border-radius: 30px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  border: none;
+  margin-bottom: 20px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+#switch:hover {
+  border: 3px #00bfff solid;
+}
+
+#button {
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  border-radius: 34px;
+  border: none;
+  padding: none;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+#button.green {
+  background-color: lime;
+}
+
+#switch.blue {
+  background-color: #3498db;
+}
+
+img {
+  height: 50vh;
+}
+
+main {
+  display: none;
+}
+
+main.show {
+  display: block;
+}
+
+#big-margin {
+  position: absolute;
+  bottom: 0;
+}
